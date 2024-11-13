@@ -1,12 +1,29 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
-  "paths": {
+  "compilerOptions": {
+    "jsx": "react-native",
+    "strict": false,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["es6", "es2017"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "target": "esnext",
+    "baseUrl": "./src",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Completeness */
+    "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+    "paths": {
       "@assets/*": ["assets/*"],
       "@screens/*": ["screens/*"],
       "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
       "@routes/*": ["routes/*"],
       "@utils/*": ["utils/*"],
-      "@services/*": ["services/*"],
     }
+  }
 }

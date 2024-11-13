@@ -1,6 +1,4 @@
-import {IValidation} from 'services/models/search';
-import {t} from 'i18next';
-import Colors from '@constants/Colors';
+import {IValidation} from 'models/generic';
 
 // RegEx
 const onlyDigits = /^[0-9]*$/;
